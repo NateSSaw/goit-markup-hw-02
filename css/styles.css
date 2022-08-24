@@ -1,0 +1,68 @@
+.page {
+    background-color: #F5F5F5;
+    color: #212121;
+}
+
+/* Шапка */
+
+ul {
+    list-style: none;
+}
+
+.logo-first {
+    color: #2196F3;
+}
+
+.logo-second {
+    color: #000000;
+}
+
+.site-nav .link {
+    color: #212121;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: #2196F3;
+}
+
+
+.header-email,
+.header-tel {
+    color: #757575;
+}
+
+.header-email:hover,
+.header-email:focus,
+.header-tel:hover,
+.header-tel:focus {
+    color: #2196F3;
+}
+
+.hero {
+    background-color: #2F303A;
+}
+
+.hero-tittle {
+    color: #FFFFFF;
+}
+
+.hero-button {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+
+.features > .section-tittle {
+    display: none;
+}
+
+
+
+/* основний чорний #000000 */
+/* основний синій #2196F3 */
+/* другоряний чорний #212121 */
+/* сірий номер телефону #757575 */
+/* основний блок Hero білий #FFFFFF */
+/* футер посилання та телефон чорний з прозорістю rgba(255, 255, 255, 0.6) */
+/* блок Hero і футер колір фону #2F303A */
