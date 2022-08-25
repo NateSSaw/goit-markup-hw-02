@@ -1,6 +1,23 @@
+/* лого чорний #000000 */
+/* основний синій #2196F3 */
+/* основний чорний #212121 */
+/* сірий номер телефону #757575 */
+/* основний блок Hero білий #FFFFFF */
+/* футер посилання та телефон чорний з прозорістю rgba(255, 255, 255, 0.6) */
+/* блок Hero і футер колір фону #2F303A */
+
+
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+}
+
+
 .page {
-    background-color: #F5F5F5;
-    color: #212121;
+    background-color: #F5F4FA;
+    color: var(--primary-text-color);
 }
 
 /* Шапка */
@@ -9,11 +26,11 @@ ul {
     list-style: none;
 }
 
-.logo-first {
-    color: #2196F3;
+.page-logo .first-part {
+    color: var(--accent-color);
 }
 
-.logo-second {
+.page-logo .second-part {
     color: #000000;
 }
 
@@ -23,46 +40,66 @@ ul {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 
 .header-email,
 .header-tel {
-    color: #757575;
+    color: var(--primary-text-color);
 }
 
 .header-email:hover,
 .header-email:focus,
 .header-tel:hover,
 .header-tel:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .hero {
     background-color: #2F303A;
 }
 
-.hero-tittle {
+.hero-title {
     color: #FFFFFF;
 }
 
 .hero-button {
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     color: #FFFFFF;
 }
 
-
-.features > .section-tittle {
-    display: none;
+.section .section-title {
+    color: var(--title-text-color);
 }
 
+.features .title {
+    color: var(--title-text-color);
+}
 
+.staff .name {
+    color: var(--title-text-color);
+}
 
-/* основний чорний #000000 */
-/* основний синій #2196F3 */
-/* другоряний чорний #212121 */
-/* сірий номер телефону #757575 */
-/* основний блок Hero білий #FFFFFF */
-/* футер посилання та телефон чорний з прозорістю rgba(255, 255, 255, 0.6) */
-/* блок Hero і футер колір фону #2F303A */
+footer {
+    background-color: #2F303A;
+}
+
+.logo-footer .first-part {
+    color: var(--accent-color);
+}
+
+.logo-footer .second-part {
+    color: #FFFFFF;
+}
+
+.contacts .map {
+    color: #FFFFFF;
+}
+
+.contacts .mail,
+.contacts .telephone {
+    color: var(--primary-text-color);
+}
+
+/* Стилі Портфоліо */
