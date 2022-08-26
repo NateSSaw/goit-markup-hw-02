@@ -15,9 +15,10 @@
 }
 
 
-.page {
+body {
     background-color: #F5F4FA;
     color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
 }
 
 /* Шапка */
@@ -28,10 +29,12 @@ ul {
 
 .page-logo .first-part {
     color: var(--accent-color);
+    font-family: Raleway, sans-serif;
 }
 
 .page-logo .second-part {
     color: #000000;
+    font-family: Raleway, sans-serif;
 }
 
 .site-nav .link {
@@ -43,6 +46,9 @@ ul {
     color: var(--accent-color);
 }
 
+.site-nav .link.current {
+    color: var(--accent-color);
+}
 
 .header-email,
 .header-tel {
@@ -87,10 +93,12 @@ footer {
 
 .logo-footer .first-part {
     color: var(--accent-color);
+    font-family: Raleway, sans-serif;
 }
 
 .logo-footer .second-part {
     color: #FFFFFF;
+    font-family: Raleway, sans-serif;
 }
 
 .contacts .map {
