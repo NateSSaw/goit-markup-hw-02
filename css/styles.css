@@ -175,7 +175,8 @@ footer {
 
 .contacts .map {
     color: var(--focus-color);
-
+    
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -186,7 +187,8 @@ footer {
 .contacts .mail,
 .contacts .telephone {
     color: rgba(255, 255, 255, 0.6);
-
+    
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -198,7 +200,7 @@ footer {
 
 .filters .filters-button {
     color: var(--title-text-color);
-
+    
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
