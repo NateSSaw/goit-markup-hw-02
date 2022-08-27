@@ -173,27 +173,21 @@ footer {
     color: var(--focus-color);
 }
 
-.contacts .map {
-    color: var(--focus-color);
-    
+address .contacts {
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
 
+.contacts .map {
+    color: var(--focus-color);
+}
+
 .contacts .mail,
 .contacts .telephone {
     color: rgba(255, 255, 255, 0.6);
-    
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
 }
 
 /* Стилі Портфоліо */
