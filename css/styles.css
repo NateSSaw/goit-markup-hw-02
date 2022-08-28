@@ -13,13 +13,24 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --focus-color: #FFFFFF;
+    --logo-header-color: #000000;
+    --mail-tel-footer-color: rgba(255, 255, 255, 0.6);
+    --section-background-color: #2F303A;
+    --main-background-color: #F5F5F5;
+    --button-hover-color: #188CE8;
+    --box-shadow-hero: rgba(0, 0, 0, 0.15);
+    --box-shadow-one: rgba(0, 0, 0, 0.1);
+    --box-shadow-two: rgba(0, 0, 0, 0.08);
+    --box-shadow-three: rgba(0, 0, 0, 0.12);
 }
 
 body {
-    background-color: #F5F4FA;
+    background-color: var(--main-background-color);
     color: var(--primary-text-color);
 
     font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
 /* Шапка */
@@ -34,7 +45,6 @@ ul {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     text-decoration: none;
 }
 
@@ -43,14 +53,13 @@ ul {
 }
 
 .page-logo .second-part {
-    color: #000000;
+    color: var(--logo-header-color);
 }
 
 .site-nav .link {
-    color: #212121;
+    color: var(--title-text-color);
 
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -70,7 +79,6 @@ ul {
     color: var(--primary-text-color);
 
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -87,7 +95,7 @@ ul {
 /* main */
 
 .hero {
-    background-color: #2F303A;
+    background-color: var(--section-background-color);
 }
 
 .hero-title {
@@ -115,6 +123,14 @@ ul {
     letter-spacing: 0.06em;
 
     cursor: pointer;
+    border-color: transparent;
+    box-shadow: 0px 4px 4px var(--box-shadow-hero);
+    border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--button-hover-color);
 }
 
 .section .section-title {
@@ -124,7 +140,6 @@ ul {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 
@@ -132,17 +147,12 @@ ul {
     color: var(--title-text-color);
 
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .features .description {
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 .staff .name {
@@ -151,18 +161,16 @@ ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    letter-spacing: 0.03em;
 }
 
 .staff .post {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
-    letter-spacing: 0.03em;
 }
 
 footer {
-    background-color: #2F303A;
+    background-color: var(--section-background-color);
 }
 
 .logo-footer .first-part {
@@ -175,19 +183,19 @@ footer {
 
 address .contacts {
     font-style: normal;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
+
 }
 
 .contacts .map {
     color: var(--focus-color);
+    text-decoration: none;
 }
 
 .contacts .mail,
 .contacts .telephone {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--mail-tel-footer-color);
+    text-decoration: none;
 }
 
 /* Стилі Портфоліо */
@@ -200,9 +208,10 @@ address .contacts {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
 
     cursor: pointer;
+    border-color: transparent;
+    border-radius: 4px;
 
 } 
 
@@ -210,6 +219,7 @@ address .contacts {
 .filters .filters-button:focus {
     color: var(--focus-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px var(--box-shadow-one), 0px 1px 2px var(--box-shadow-two), 0px 2px 2px var(--box-shadow-three);
 }
 
 .projects .name {
@@ -224,8 +234,6 @@ address .contacts {
 .projects p {
     color: var(--primary-text-color);
 
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
 }
