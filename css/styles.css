@@ -22,6 +22,11 @@
     --box-shadow-one: rgba(0, 0, 0, 0.1);
     --box-shadow-two: rgba(0, 0, 0, 0.08);
     --box-shadow-three: rgba(0, 0, 0, 0.12);
+    --box-shadow-four: rgba(0, 0, 0, 0.14);
+    --box-shadow-five: rgba(0, 0, 0, 0.2);
+    --bg-staff-color: #F5F4FA;
+    --border-color: #EEEEEE;
+    --border-header-color: #ECECEC;
 }
 
 body {
@@ -37,6 +42,11 @@ body {
 
 ul {
     list-style: none;
+}
+
+header {
+    background-color: var(--focus-color);
+    border: 1px solid var(--border-header-color);
 }
 
 .page-logo,
@@ -155,6 +165,17 @@ ul {
     line-height: 1.71;
 }
 
+
+.section .staff {
+    background: var(--bg-staff-color);
+}
+
+.staff .card {
+    background: var(--focus-color);
+    box-shadow: 0px 1px 3px var(--box-shadow-three), 0px 1px 1px var(--box-shadow-four), 0px 2px 1px var(--box-shadow-five);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .staff .name {
     color: var(--title-text-color);
 
@@ -222,6 +243,12 @@ address .contacts {
     box-shadow: 0px 3px 1px var(--box-shadow-one), 0px 1px 2px var(--box-shadow-two), 0px 2px 2px var(--box-shadow-three);
 }
 
+.projects .cards {
+    
+    background: var(--focus-color);
+    border: 1px solid var(--border-color);
+}
+
 .projects .name {
     color: var(--title-text-color);
 
@@ -231,7 +258,7 @@ address .contacts {
     letter-spacing: 0.06em;
 }
 
-.projects p {
+.projects .project-type {
     color: var(--primary-text-color);
 
     font-size: 16px;
